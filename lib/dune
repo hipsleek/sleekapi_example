@@ -1,0 +1,8 @@
+(library
+ (name sleekapi_example)
+ (libraries hipsleek.api))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A -w -K))))

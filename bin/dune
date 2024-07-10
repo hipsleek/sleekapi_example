@@ -1,0 +1,18 @@
+(executable
+ (public_name sleekapi_example_main)
+ (name main)
+ (link_flags -linkall)
+ (libraries dynlink sleekapi_example)
+ (modules main))
+
+(executable
+ (public_name sleekapi_example_plugin)
+ (name plugin)
+ (libraries sleekapi_example)
+ (modules plugin)
+ (modes exe plugin))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A -w -K))))
